@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>M Burger</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header>
+            <img src="mburger.jpg">
+            
+        </header>
+
+
+        <main>
+           
+            <div class="items">
+     
+            </div>
+            
+            <div class="your-order">
+                <h3>Your Order</h3>
+                <div class="orders">
+                    
+                    <!-- <div class="single-order">
+                        <div class="name-and-remove">
+                            <div class="order-name">Pizza</div>
+                            <div class="remove">remove</div> 
+                        </div>
+
+                        <div class="order-price">$13</div>
+                    </div> -->
+                    
+                </div>
+
+                <hr>
+
+                <div class="total-price-div">
+                    <div>Total Price:</div>
+                    <div class="total-price">0</div>
+
+                </div>
+
+                <button class="complete-order-btn" >Complete order</button>
+
+            </div>
+
+            <div class="thank-you">
+                <p>
+                    Thank you Nigga, your order is on its way!
+
+                </p>
+            </div>
+
+        </main>
+
+        
+    </div> <!--Wrapper till here, for blur effect on form popup-->
+
+    <div class="card-details-form" id="card-details-form">
+        <h2>Enter card details</h2>
+        <button class="form-close-btn">x</button>
+        <form class="form">
+            <input class="customer-name" type="text" placeholder="Enter your name" required>
+            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="Enter Credit Card Number">
+            <input type="text" placeholder="Enter CVV" name="cvv" maxlength="4"  class="cvv" pattern="\d{3,4}" required/>               
+            <button type="submit" class="pay">Pay</button>
+        </form>
+    </div>
+        
+        
+        
+        
+        
+</body>
+</html>
